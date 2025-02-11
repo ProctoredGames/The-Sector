@@ -1,15 +1,15 @@
 {
 	"schemaVersion": 1,
 	"id": "thesector",
-	"version": "${version}",
+	"version": "0.1",
 	"name": "The Sector",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Adds a new dimension to minecraft set on a fantasy alien world...",
 	"authors": [
-		"Me!"
+		"ProctoredGames"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://proctoredgames.net/",
+		"sources": "https://github.com/ProctoredGames/The-Sector"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/thesector/icon.png",

@@ -1,0 +1,45 @@
+
+
+Pistachio Jungle:
+    Mobs:
+        Pistacheater - disguises as pistachio and descends on its vine to pick up the player and drop
+        them to their death
+        Clacker - spider-like mob with a giant pistachio shell pair for a head, it can use its tongue to
+        bring the player closer to itself as well as can fire a lazar that does damage
+    Plants:
+        Giant Dripleaf and Giant Dripleaf Sprouts - giant dripleaf plants have 3*3 leaves that can be stood
+        on before they collapse just like a dripleaf. The plant is made out of dripleaf wood which is a green
+        wood block set. The plant is also 3*3 blocks and very tall with a water column moving upwards in the
+        center of it
+        Pistachio trees - made out of pistachio wood which is the same light brown color as pistachio shells
+        and of course has its own full block set. These trees have no leaves, only pistachios hanging on
+        pistachio vines underneath their branches (with a rare chance of one being a pistacheater)
+    General appearance:
+        The foliage will be thick in this biome with thick green fog. The ground is the color of shelled
+        pistachios. Small and big dripleaf also generate here, the big ones at massive heights
+Cracked Glassfields:
+    General appearance:
+        This biome will be completely made up of different colors of Glass Stone blocks, with deep canyons
+        and cracks in the terrain
+Cloud fields:
+    Mobs:
+        Gufter - a ghost-like hostile mob that haunts pirate ships. Their look is inspired from cartoon
+        Halloween ghosts
+    General appearance:
+        this biome will be filled with block-built clouds made out of Dense Cloud blocks which can be walked
+        on. These clouds will all be at ground level (Y 64 probably) and below the clouds until the bottom
+        of the world will be an empty void. Staying too long on a dense cloud will cause entities/the player
+        to sink into it (and eventually through it) and moving will make them re-emerge from the block. the
+        biome will also have pirate ship structures generating at that same cloud level in which the player
+        will be able to find Gufters, a ghost-like hostile mob
+Hydrogen Seas:
+    General appearance:
+        A vast ocean filled with the dimension's water substitute - Liquid Hydrogen (which is renewable).
+Hydrogen Swamp:
+    Plants:
+        Hydrine vines: thick 5 block thick vines that are made out of hydrine wood blocks and that emerge
+        from and snake across the terrain. on them on all sides will generate hydrine flowers, which look
+        similar to spore blossoms but are light sky blue in color
+    General appearance:
+        Generates like Minecraft's swamp biome but with Liquid Hydrogen instead of water and with Hydrine
+        vines and grass
