@@ -34,7 +34,7 @@ Cloud fields:
         will be able to find Gufters, a ghost-like hostile mob
 Hydrogen Seas:
     General appearance:
-        A vast ocean filled with the dimension's water substitute - Liquid Hydrogen (which is renewable).
+        A vast ocean filled with the dimension's water substitute - Liquid Hydrogen.
 Hydrogen Swamp:
     Plants:
         Hydrine vines: thick 5 block thick vines that are made out of hydrine wood blocks and that emerge
@@ -43,3 +43,5 @@ Hydrogen Swamp:
     General appearance:
         Generates like Minecraft's swamp biome but with Liquid Hydrogen instead of water and with Hydrine
         vines and grass
+Liquid Hydrogen causes the freezing effect (same thing as powdered snow) when an entity makes contact with
+it. It is a renewable (as in infinite sources are possible) block just like water
