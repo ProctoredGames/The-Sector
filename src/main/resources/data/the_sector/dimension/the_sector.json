@@ -1,0 +1,108 @@
+{
+  "type": "the_sector:the_sector_type",
+  "generator": {
+    "settings": "the_sector:the_sector_settings",
+    "type": "minecraft:noise",
+    "biome_source": {
+      "biomes": [
+        {
+          "biome": "the_sector:charred_wastelands",
+          "parameters": {
+            "continentalness": [0.55, 1.0],
+            "depth": 0.0,
+            "erosion": [0.55, 1.0],
+            "humidity": [-1.0, -0.35],
+            "offset": 0.0,
+            "temperature": [0.55, 1.0],
+            "weirdness": [-0.35, 0.35]
+          }
+        },
+        {
+          "biome": "the_sector:cloud_fields",
+          "parameters": {
+            "continentalness": [0.03, 0.3],
+            "depth": 0.0,
+            "erosion": [0.45, 0.55],
+            "humidity": [-1.0, -0.35],
+            "offset": 0.0,
+            "temperature": [-0.45, -0.15],
+            "weirdness": [0.35, 1.0]
+          }
+        },
+        {
+          "biome": "the_sector:cracked_glasslands",
+          "parameters": {
+            "continentalness": [0.3, 0.55],
+            "depth": 0.0,
+            "erosion": [0.55, 1.0],
+            "humidity": [-0.1, 0.1],
+            "offset": 0.0,
+            "temperature": [-0.45, -0.15],
+            "weirdness": [-1.0, -0.9333]
+          }
+        },
+        {
+          "biome": "the_sector:hydrogen_river",
+          "parameters": {
+            "continentalness": [-0.19, -0.11],
+            "depth": 0.0,
+            "erosion": [-0.2225, 0.05],
+            "humidity": [-0.35, -0.1],
+            "offset": 0.0,
+            "temperature": [-0.45, -0.15],
+            "weirdness": [-1.0, -0.9333]
+          }
+        },
+        {
+          "biome": "the_sector:hydrogen_sea",
+          "parameters": {
+            "continentalness": [-0.455, -0.19],
+            "depth": 0.0,
+            "erosion": [-0.78, -0.375],
+            "humidity": [-0.1, 0.3],
+            "offset": 0.0,
+            "temperature": [-0.15, 0.2],
+            "weirdness": [-1.0, -0.9333]
+          }
+        },
+        {
+          "biome": "the_sector:hydrogen_swamp",
+          "parameters": {
+            "continentalness": [-0.11, 0.03],
+            "depth": 0.0,
+            "erosion": [-1.0, -0.78],
+            "humidity": [0.3, 1.0],
+            "offset": 0.0,
+            "temperature": [-0.45, -0.15],
+            "weirdness": [-1.0, -0.9333]
+          }
+        },
+        {
+          "biome": "the_sector:pistachio_jungle",
+          "parameters": {
+            "continentalness": [0.03, 0.3],
+            "depth": 0.0,
+            "erosion": [0.45, 0.55],
+            "humidity": [0.3, 1.0],
+            "offset": 0.0,
+            "temperature": [0.2, 0.55],
+            "weirdness": [-1.0, -0.9333]
+          }
+        },
+        {
+          "biome": "the_sector:sector_plains",
+          "parameters": {
+            "continentalness": [0.03, 0.55],
+            "depth": 0.0,
+            "erosion": [-1.0, -0.375],
+            "humidity": [-1.0, -0.35],
+            "offset": 0.0,
+            "temperature": [-0.15, 0.2],
+            "weirdness": [-0.35, 0.35]
+          }
+        }
+      ],
+      "type": "minecraft:multi_noise"
+    }
+  }
+}

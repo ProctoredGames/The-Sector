@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "thesector",
+	"id": "the_sector",
 	"version": "0.1",
 	"name": "The Sector",
 	"description": "Adds a new dimension to minecraft set on a fantasy alien world...",
@@ -12,21 +12,21 @@
 		"sources": "https://github.com/ProctoredGames/The-Sector"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/thesector/icon.png",
+	"icon": "assets/the_sector/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.proctoredgames.thesector.TheSector"
+			"net.proctoredgames.the_sector.TheSector"
 		],
 		"fabric-datagen": [
-			"net.proctoredgames.thesector.TheSectorDataGenerator"
+			"net.proctoredgames.the_sector.TheSectorDataGenerator"
 		],
 		"client": [
-			"net.proctoredgames.thesector.TheSectorClient"
+			"net.proctoredgames.the_sector.TheSectorClient"
 		]
 	},
 	"mixins": [
-		"thesector.mixins.json"
+		"the_sector.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.10",

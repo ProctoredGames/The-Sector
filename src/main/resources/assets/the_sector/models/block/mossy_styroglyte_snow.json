@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "the_sector:block/styroglyte",
+    "particle": "the_sector:block/styroglyte",
+    "side": "the_sector:block/mossy_styroglyte_snow",
+    "top": "the_sector:block/mossy_styroglyte_top"
+  }
+}

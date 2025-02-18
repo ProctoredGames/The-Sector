@@ -1,0 +1,24 @@
+{
+  "variants": {
+    "snowy=false": [
+      {
+        "model": "the_sector:block/mossy_styroglyte"
+      },
+      {
+        "model": "the_sector:block/mossy_styroglyte",
+        "y": 90
+      },
+      {
+        "model": "the_sector:block/mossy_styroglyte",
+        "y": 180
+      },
+      {
+        "model": "the_sector:block/mossy_styroglyte",
+        "y": 270
+      }
+    ],
+    "snowy=true": {
+      "model": "the_sector:block/mossy_styroglyte_snow"
+    }
+  }
+}
