@@ -1,20 +1,7 @@
 {
   "variants": {
-    "": [
-      {
-        "model": "the_sector:block/styroglyte"
-      },
-      {
-        "model": "the_sector:block/styroglyte_mirrored"
-      },
-      {
-        "model": "the_sector:block/styroglyte",
-        "y": 180
-      },
-      {
-        "model": "the_sector:block/styroglyte_mirrored",
-        "y": 180
-      }
-    ]
+    "": {
+      "model": "the_sector:block/styroglyte"
+    }
   }
 }

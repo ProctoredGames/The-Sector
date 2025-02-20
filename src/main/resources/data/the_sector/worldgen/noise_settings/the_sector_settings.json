@@ -4,7 +4,7 @@
     "Name": "the_sector:styroglyte"
   },
   "default_fluid": {
-    "Name": "minecraft:water",
+    "Name": "the_sector:liquid_hydrogen",
     "Properties": {
       "level": "0"
     }
@@ -442,6 +442,7 @@
                 "type": "minecraft:condition",
                 "if_true": {
                   "type": "minecraft:water",
+                  "fluid": "the_sector:liquid_hydrogen",
                   "add_stone_depth": false,
                   "offset": -1,
                   "surface_depth_multiplier": 0
@@ -488,6 +489,7 @@
                               "type": "minecraft:condition",
                               "if_true": {
                                 "type": "minecraft:water",
+                                "fluid": "the_sector:liquid_hydrogen",
                                 "add_stone_depth": false,
                                 "offset": 0,
                                 "surface_depth_multiplier": 0
@@ -495,7 +497,7 @@
                               "then_run": {
                                 "type": "minecraft:block",
                                 "result_state": {
-                                  "Name": "the_sector:mossy_styroglyte",
+                                  "Name": "the_sector:growing_styroglyte",
                                   "Properties": {
                                     "snowy": "false"
                                   }
@@ -520,6 +522,7 @@
               "type": "minecraft:condition",
               "if_true": {
                 "type": "minecraft:water",
+                "fluid": "the_sector:liquid_hydrogen",
                 "add_stone_depth": true,
                 "offset": -6,
                 "surface_depth_multiplier": -1

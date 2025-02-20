@@ -3,6 +3,7 @@ package net.proctoredgames.the_sector.block;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -17,6 +18,7 @@ import net.proctoredgames.the_sector.block.custom.DenseCloudBlock;
 import net.proctoredgames.the_sector.block.custom.PistachioBlock;
 import net.proctoredgames.the_sector.block.custom.PistachioVineBlock;
 import net.proctoredgames.the_sector.block.custom.RawPistachioBlock;
+import net.proctoredgames.the_sector.fluid.ModFluids;
 import net.proctoredgames.the_sector.item.custom.PistachioItem;
 
 import java.util.function.Function;
@@ -25,7 +27,7 @@ public class ModBlocks {
     public static final Block DENSE_CLOUD = registerBlock("dense_cloud", new DenseCloudBlock(AbstractBlock.Settings.create()));
 
     public static final Block STYROGLYTE = registerBlock("styroglyte", new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
-    public static final Block MOSSY_STYROGLYTE = registerBlock("mossy_styroglyte", new GrassBlock(AbstractBlock.Settings.copy(Blocks.STONE).mapColor(MapColor.PALE_GREEN)));
+    public static final Block growing_styroglyte = registerBlock("growing_styroglyte", new GrassBlock(AbstractBlock.Settings.copy(Blocks.STONE).mapColor(MapColor.PALE_GREEN)));
 
     public static final Block BLACK_GLASS_STONE = registerBlock("black_glass_stone", new Block(AbstractBlock.Settings.create().mapColor(DyeColor.BLACK).instrument(NoteBlockInstrument.HAT).strength(0.3F).sounds(BlockSoundGroup.GLASS).nonOpaque().allowsSpawning(Blocks::never).solidBlock(Blocks::never).suffocates(Blocks::never).blockVision(Blocks::never)));
     public static final Block BLUE_GLASS_STONE = registerBlock("blue_glass_stone", new Block(AbstractBlock.Settings.create().mapColor(DyeColor.BLUE).instrument(NoteBlockInstrument.HAT).strength(0.3F).sounds(BlockSoundGroup.GLASS).nonOpaque().allowsSpawning(Blocks::never).solidBlock(Blocks::never).suffocates(Blocks::never).blockVision(Blocks::never)));
@@ -51,6 +53,8 @@ public class ModBlocks {
     public static final Block DRIPLEAF_LOG = registerBlock("dripleaf_log", new PillarBlock(AbstractBlock.Settings.create()));
 
     public static final Block PISTACHIO_LOG = registerBlock("pistachio_log", new PillarBlock(AbstractBlock.Settings.create()));
+
+    public static final Block LIQUID_HYDROGEN = registerBlock("liquid_hydrogen", new FluidBlock(ModFluids.LIQUID_HYDROGEN_STILL, AbstractBlock.Settings.copy(Blocks.WATER).replaceable().noCollision().strength(100.0f).pistonBehavior(PistonBehavior.DESTROY).dropsNothing().liquid().solid().sounds(BlockSoundGroup.SCULK)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -88,6 +92,7 @@ public class ModBlocks {
             entries.add(ModBlocks.PISTACHIO_VINE);
             entries.add(ModBlocks.DRIPLEAF_LOG);
             entries.add(ModBlocks.PISTACHIO_LOG);
+            entries.add(ModBlocks.LIQUID_HYDROGEN);
         });
     }
 }

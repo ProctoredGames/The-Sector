@@ -2,9 +2,9 @@
   "textures": {
     "particle": "the_sector:block/styroglyte",
     "bottom": "the_sector:block/styroglyte",
-    "top": "the_sector:block/mossy_styroglyte_top",
-    "side": "the_sector:block/mossy_styroglyte_side",
-    "overlay": "the_sector:block/mossy_styroglyte_side_overlay"
+    "top": "the_sector:block/growing_styroglyte_top",
+    "side": "the_sector:block/growing_styroglyte_side",
+    "overlay": "the_sector:block/growing_styroglyte_side_overlay"
   },
   "elements": [
     {   "from": [ 0, 0, 0 ],

@@ -30,7 +30,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.DENSE_CLOUD);
                         entries.add(ModBlocks.STYROGLYTE);
-                        entries.add(ModBlocks.MOSSY_STYROGLYTE);
+                        entries.add(ModBlocks.growing_styroglyte);
                         entries.add(ModBlocks.BLACK_GLASS_STONE);
                         entries.add(ModBlocks.GRAY_GLASS_STONE);
                         entries.add(ModBlocks.GREEN_GLASS_STONE);

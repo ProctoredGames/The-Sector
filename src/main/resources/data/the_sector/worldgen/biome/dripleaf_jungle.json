@@ -56,13 +56,14 @@
     [
       "minecraft:glow_lichen",
       "minecraft:patch_tall_grass_2",
-      "the_sector:pistachio_jungle_clay"
+      "the_sector:pistachio_jungle_clay",
+      "minecraft:patch_grass_plain"
     ],
     [
       "minecraft:freeze_top_layer"
     ]
   ],
-  "has_precipitation": true,
+  "has_precipitation": false,
   "spawn_costs": {},
   "spawners": {
     "ambient": [],
