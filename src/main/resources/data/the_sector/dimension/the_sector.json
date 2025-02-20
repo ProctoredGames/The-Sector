@@ -37,14 +37,14 @@
             "erosion": [0.55, 1.0],
             "humidity": [-0.1, 0.1],
             "offset": 0.0,
-            "temperature": [-0.45, -0.15],
+            "temperature": [0.2, 0.55],
             "weirdness": [-1.0, -0.9333]
           }
         },
         {
           "biome": "the_sector:hydrogen_river",
           "parameters": {
-            "continentalness": [-0.19, -0.11],
+            "continentalness": [-0.11, 0.03],
             "depth": 0.0,
             "erosion": [-0.2225, 0.05],
             "humidity": [-0.35, -0.1],
@@ -56,7 +56,7 @@
         {
           "biome": "the_sector:hydrogen_sea",
           "parameters": {
-            "continentalness": [-0.455, -0.19],
+            "continentalness": [-1.0, -0.455],
             "depth": 0.0,
             "erosion": [-0.78, -0.375],
             "humidity": [-0.1, 0.3],
@@ -70,15 +70,15 @@
           "parameters": {
             "continentalness": [-0.11, 0.03],
             "depth": 0.0,
-            "erosion": [-1.0, -0.78],
+            "erosion": [-0.5, 0.1],
             "humidity": [0.3, 1.0],
             "offset": 0.0,
-            "temperature": [-0.45, -0.15],
+            "temperature": [0.2, 0.55],
             "weirdness": [-1.0, -0.9333]
           }
         },
         {
-          "biome": "the_sector:pistachio_jungle",
+          "biome": "the_sector:dripleaf_jungle",
           "parameters": {
             "continentalness": [0.03, 0.3],
             "depth": 0.0,
@@ -90,11 +90,23 @@
           }
         },
         {
+          "biome": "the_sector:pistachio_forest",
+          "parameters": {
+            "continentalness": [0.03, 0.3],
+            "depth": 0.0,
+            "erosion": [-0.2, 0.1],
+            "humidity": [0.3, 1.0],
+            "offset": 0.0,
+            "temperature": [0.2, 0.55],
+            "weirdness": [-0.35, 0.35]
+          }
+        },
+        {
           "biome": "the_sector:sector_plains",
           "parameters": {
             "continentalness": [0.03, 0.55],
             "depth": 0.0,
-            "erosion": [-1.0, -0.375],
+            "erosion": [-0.375, 0.05],
             "humidity": [-1.0, -0.35],
             "offset": 0.0,
             "temperature": [-0.15, 0.2],
