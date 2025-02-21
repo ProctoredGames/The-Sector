@@ -14,7 +14,8 @@ public class TheSectorClient implements ClientModInitializer {
         ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> {
             if (world == null || pos == null) return GrassColors.getColor(0.5, 1.0);
             return BiomeColors.getGrassColor(world, pos);
-        }, ModBlocks.growing_styroglyte);
-        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.growing_styroglyte, RenderLayer.getCutoutMipped());
+        }, ModBlocks.GROWING_STYROGLYTE);
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GROWING_STYROGLYTE, RenderLayer.getCutoutMipped());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.WHITE_GLASS_STONE, RenderLayer.getTranslucent());
     }
 }
