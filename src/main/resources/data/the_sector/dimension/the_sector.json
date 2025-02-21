@@ -112,18 +112,6 @@
             "temperature": [-0.15, 0.2],
             "weirdness": [-0.35, 0.35]
           }
-        },
-        {
-          "biome": "the_sector:hydrogen_coast",
-          "parameters": {
-            "continentalness": [-0.455, -0.11],
-            "depth": 0.0,
-            "erosion": [-0.5, 0.1],
-            "humidity": [-0.35, 0.3],
-            "offset": 0.0,
-            "temperature": [-0.15, 0.2],
-            "weirdness": [-0.35, 0.35]
-          }
         }
       ],
 
