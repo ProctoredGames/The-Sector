@@ -28,8 +28,8 @@
     "lava_level": {
       "above_bottom": 8
     },
-    "probability": 0.5,
-    "replaceable": "#minecraft:overworld_carver_replaceables",
+    "probability": 0.3,
+    "replaceable": "#the_sector:glass_stone",
     "shape": {
       "distance_factor": {
         "type": "minecraft:uniform",
