@@ -1,9 +1,6 @@
 {
   "values": [
-    "#minecraft:moss_replaceable",
     "minecraft:clay",
-    "minecraft:gravel",
-    "minecraft:sand",
     "the_sector:growing_styroglyte",
     "the_sector:styroglyte"
   ]

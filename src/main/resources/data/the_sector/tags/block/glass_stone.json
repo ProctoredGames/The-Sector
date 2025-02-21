@@ -1,5 +1,21 @@
 {
   "values": [
-    "the_sector:white_glass_stone"
+    "the_sector:white_glass_stone",
+    "the_sector:red_glass_stone",
+    "the_sector:orange_glass_stone",
+    "the_sector:yellow_glass_stone",
+    "the_sector:green_glass_stone",
+    "the_sector:lime_glass_stone",
+    "the_sector:blue_glass_stone",
+    "the_sector:light_blue_glass_stone",
+    "the_sector:cyan_glass_stone",
+    "the_sector:purple_glass_stone",
+    "the_sector:magenta_glass_stone",
+    "the_sector:pink_glass_stone",
+    "the_sector:brown_glass_stone",
+    "the_sector:gray_glass_stone",
+    "the_sector:light_gray_glass_stone",
+    "the_sector:brown_glass_stone",
+    "the_sector:black_glass_stone"
   ]
 }
