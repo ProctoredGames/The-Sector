@@ -26,7 +26,7 @@
       }
     },
     "lava_level": {
-      "above_bottom": 8
+      "above_bottom": -100
     },
     "probability": 0.4,
     "replaceable": "#the_sector:glass_stone",
