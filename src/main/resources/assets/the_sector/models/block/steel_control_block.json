@@ -1,12 +1,8 @@
 {
-  "parent": "block/cube",
+  "parent": "minecraft:block/template_command_block",
   "textures": {
-    "particle": "the_sector:block/steel_block",
-    "down": "the_sector:block/steel_block",
-    "up": "the_sector:block/steel_block",
-    "north": "the_sector:block/steel_control_block_front",
-    "south": "the_sector:block/steel_block",
-    "east": "the_sector:block/steel_block",
-    "west": "the_sector:block/steel_block"
+    "back": "the_sector:block/steel_block",
+    "front": "the_sector:block/steel_control_block_front",
+    "side": "the_sector:block/steel_block"
   }
 }
