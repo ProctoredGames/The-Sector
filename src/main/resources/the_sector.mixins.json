@@ -3,7 +3,7 @@
 	"package": "net.proctoredgames.the_sector.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"LiquidHydrogenEntityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

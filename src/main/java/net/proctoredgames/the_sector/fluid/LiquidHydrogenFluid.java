@@ -4,6 +4,9 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.FluidBlock;
 import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.FlowableFluid;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FluidState;
@@ -19,11 +22,10 @@ import net.minecraft.state.property.IntProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.MathHelper;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.random.Random;
-import net.minecraft.world.BlockView;
-import net.minecraft.world.World;
-import net.minecraft.world.WorldAccess;
-import net.minecraft.world.WorldView;
+import net.minecraft.world.*;
 import net.proctoredgames.the_sector.block.ModBlocks;
 import net.proctoredgames.the_sector.item.ModItems;
 import org.jetbrains.annotations.Nullable;
@@ -68,10 +70,6 @@ public abstract class LiquidHydrogenFluid extends FlowableFluid {
         Block.dropStacks(state, world, pos, blockEntity);
     }
 
-    public int getFlowSpeed(WorldView world) {
-        return 10;
-    }
-
     public BlockState toBlockState(FluidState state) {
         return ModBlocks.LIQUID_HYDROGEN.getDefaultState().with(FluidBlock.LEVEL, getBlockStateLevel(state));
     }
@@ -91,7 +89,7 @@ public abstract class LiquidHydrogenFluid extends FlowableFluid {
 
 
     public int getTickRate(WorldView world) {
-        return 40;
+        return 2;
     }
 
     public boolean canBeReplacedWith(FluidState state, BlockView world, BlockPos pos, Fluid fluid, Direction direction) {
@@ -116,7 +114,7 @@ public abstract class LiquidHydrogenFluid extends FlowableFluid {
 
         @Override
         protected int getMaxFlowDistance(WorldView world) {
-            return 4;
+            return 8;
         }
 
         @Override
@@ -129,7 +127,7 @@ public abstract class LiquidHydrogenFluid extends FlowableFluid {
     public static class Still extends LiquidHydrogenFluid {
         @Override
         protected int getMaxFlowDistance(WorldView world) {
-            return 4;
+            return 8;
         }
 
         @Override

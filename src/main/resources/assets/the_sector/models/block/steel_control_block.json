@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "the_sector:block/steel_block",
+    "down": "the_sector:block/steel_block",
+    "up": "the_sector:block/steel_block",
+    "north": "the_sector:block/steel_control_block_front",
+    "south": "the_sector:block/steel_block",
+    "east": "the_sector:block/steel_block",
+    "west": "the_sector:block/steel_block"
+  }
+}

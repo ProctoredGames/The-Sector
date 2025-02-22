@@ -11,6 +11,8 @@ import net.proctoredgames.the_sector.fluid.ModFluids;
 import net.proctoredgames.the_sector.item.custom.PistachioItem;
 
 public class ModItems {
+    public static final Item SECTOR_FOCUSING_CRYSTAL = registerItem("sector_focusing_crystal", new Item(new Item.Settings()));
+
     public static final Item RAW_PISTACHIO = registerItem("raw_pistachio", new Item(new Item.Settings()));
     public static final Item PISTACHIO = registerItem("pistachio", new PistachioItem(new Item.Settings()));
     public static final Item PISTACHIO_SHELL = registerItem("pistachio_shell", new Item(new Item.Settings()));

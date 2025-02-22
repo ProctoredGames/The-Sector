@@ -7,7 +7,7 @@
   "effects": {
     "fog_color": 2678783,
     "foliage_color": 6975545,
-    "grass_color_modifier": "swamp",
+    "grass_color": 2678783,
     "mood_sound": {
       "block_search_extent": 8,
       "offset": 2.0,
@@ -43,8 +43,6 @@
     ],
     [],
     [
-      "minecraft:spring_water",
-      "minecraft:spring_lava"
     ],
     [
       "minecraft:glow_lichen",

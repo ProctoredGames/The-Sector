@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "the_sector:block/steel_block",
+    "side": "the_sector:block/steel_block",
+    "top": "the_sector:block/steel_block"
+  }
+}

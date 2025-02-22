@@ -25,28 +25,34 @@ public class ModItemGroups {
 
     public static final ItemGroup THE_SECTOR_BLOCKS = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(TheSector.MOD_ID, "the_sector_blocks"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.DENSE_CLOUD))
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.GROWING_STYROGLYTE))
                     .displayName(Text.translatable("itemgroup.the_sector.the_sector_blocks"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.DENSE_CLOUD);
                         entries.add(ModBlocks.STYROGLYTE);
                         entries.add(ModBlocks.GROWING_STYROGLYTE);
-                        entries.add(ModBlocks.BLACK_GLASS_STONE);
-                        entries.add(ModBlocks.GRAY_GLASS_STONE);
-                        entries.add(ModBlocks.GREEN_GLASS_STONE);
-                        entries.add(ModBlocks.BLUE_GLASS_STONE);
-                        entries.add(ModBlocks.CYAN_GLASS_STONE);
-                        entries.add(ModBlocks.BROWN_GLASS_STONE);
-                        entries.add(ModBlocks.LIGHT_BLUE_GLASS_STONE);
-                        entries.add(ModBlocks.LIGHT_GRAY_GLASS_STONE);
-                        entries.add(ModBlocks.MAGENTA_GLASS_STONE);
-                        entries.add(ModBlocks.ORANGE_GLASS_STONE);
-                        entries.add(ModBlocks.PINK_GLASS_STONE);
-                        entries.add(ModBlocks.PURPLE_GLASS_STONE);
-                        entries.add(ModBlocks.LIME_GLASS_STONE);
-                        entries.add(ModBlocks.RED_GLASS_STONE);
                         entries.add(ModBlocks.WHITE_GLASS_STONE);
+                        entries.add(ModBlocks.LIGHT_GRAY_GLASS_STONE);
+                        entries.add(ModBlocks.GRAY_GLASS_STONE);
+                        entries.add(ModBlocks.BLACK_GLASS_STONE);
+                        entries.add(ModBlocks.BROWN_GLASS_STONE);
+                        entries.add(ModBlocks.RED_GLASS_STONE);
+                        entries.add(ModBlocks.ORANGE_GLASS_STONE);
                         entries.add(ModBlocks.YELLOW_GLASS_STONE);
+                        entries.add(ModBlocks.LIME_GLASS_STONE);
+                        entries.add(ModBlocks.GREEN_GLASS_STONE);
+                        entries.add(ModBlocks.LIGHT_BLUE_GLASS_STONE);
+                        entries.add(ModBlocks.CYAN_GLASS_STONE);
+                        entries.add(ModBlocks.BLUE_GLASS_STONE);
+                        entries.add(ModBlocks.PURPLE_GLASS_STONE);
+                        entries.add(ModBlocks.MAGENTA_GLASS_STONE);
+                        entries.add(ModBlocks.PINK_GLASS_STONE);
+                        entries.add(ModBlocks.STEEL_BLOCK);
+                        entries.add(ModBlocks.STEEL_CONTROL_BLOCK);
+                        entries.add(ModBlocks.STEEL_STAIRS);
+                        entries.add(ModBlocks.STEEL_SLAB);
+                        entries.add(ModBlocks.STEEL_DOOR);
+                        entries.add(ModBlocks.STEEL_TRAPDOOR);
 
                     }).build());
 

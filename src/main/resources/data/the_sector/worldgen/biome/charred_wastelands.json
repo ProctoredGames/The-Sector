@@ -54,8 +54,8 @@
     ],
     [],
     [
-      "minecraft:spring_water",
-      "minecraft:spring_lava"
+      "the_sector:spring_lava_sector",
+      "the_sector:lake_lava_sector"
     ],
     [
       "minecraft:patch_tall_grass_2",

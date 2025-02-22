@@ -16,6 +16,25 @@ public class TheSectorClient implements ClientModInitializer {
             return BiomeColors.getGrassColor(world, pos);
         }, ModBlocks.GROWING_STYROGLYTE);
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GROWING_STYROGLYTE, RenderLayer.getCutoutMipped());
+        ColorProviderRegistry.ITEM.register((stack, tintIndex) -> 0xC8E580, ModBlocks.GROWING_STYROGLYTE);
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.WHITE_GLASS_STONE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.RED_GLASS_STONE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ORANGE_GLASS_STONE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.YELLOW_GLASS_STONE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GREEN_GLASS_STONE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LIME_GLASS_STONE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BLUE_GLASS_STONE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LIGHT_BLUE_GLASS_STONE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CYAN_GLASS_STONE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PURPLE_GLASS_STONE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MAGENTA_GLASS_STONE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PINK_GLASS_STONE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GRAY_GLASS_STONE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LIGHT_GRAY_GLASS_STONE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BLACK_GLASS_STONE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BROWN_GLASS_STONE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DENSE_CLOUD, RenderLayer.getTranslucent());
+        ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> 0x33CCFF, ModBlocks.LIQUID_HYDROGEN);
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LIQUID_HYDROGEN, RenderLayer.getTranslucent());
     }
 }

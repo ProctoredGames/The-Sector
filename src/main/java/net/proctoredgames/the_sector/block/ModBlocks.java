@@ -14,10 +14,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.proctoredgames.the_sector.TheSector;
-import net.proctoredgames.the_sector.block.custom.DenseCloudBlock;
-import net.proctoredgames.the_sector.block.custom.PistachioBlock;
-import net.proctoredgames.the_sector.block.custom.PistachioVineBlock;
-import net.proctoredgames.the_sector.block.custom.RawPistachioBlock;
+import net.proctoredgames.the_sector.block.custom.*;
 import net.proctoredgames.the_sector.fluid.ModFluids;
 import net.proctoredgames.the_sector.item.custom.PistachioItem;
 
@@ -50,11 +47,27 @@ public class ModBlocks {
     public static final Block PISTACHIO_BLOCK = registerBlock("pistachio_block", new PistachioBlock(AbstractBlock.Settings.create()));
     public static final Block PISTACHIO_VINE = registerBlock("pistachio_vine", new PistachioVineBlock(AbstractBlock.Settings.create()));
 
+    public static final Block STEEL_BLOCK = registerBlock("steel_block", new Block(AbstractBlock.Settings.create().mapColor(MapColor.DEEPSLATE_GRAY).instrument(NoteBlockInstrument.IRON_XYLOPHONE).requiresTool().strength(5.0F, 6.0F).sounds(BlockSoundGroup.METAL)));
+    public static final Block STEEL_STAIRS = registerBlock("steel_stairs", createOldStairsBlock(STEEL_BLOCK));
+    public static final Block STEEL_SLAB = registerBlock("steel_slab", new SlabBlock(AbstractBlock.Settings.copy(STEEL_BLOCK)));
+    public static final Block STEEL_DOOR = registerBlock("steel_door", new DoorBlock(new BlockSetType("steel"), AbstractBlock.Settings.copy(STEEL_BLOCK)));
+    public static final Block STEEL_TRAPDOOR = registerBlock("steel_trapdoor", new TrapdoorBlock(new BlockSetType("steel"), AbstractBlock.Settings.copy(STEEL_BLOCK)));
+    public static final Block STEEL_CONTROL_BLOCK = registerBlock("steel_control_block", new SteelControlBlock(AbstractBlock.Settings.copy(STEEL_BLOCK)));
+
     public static final Block DRIPLEAF_LOG = registerBlock("dripleaf_log", new PillarBlock(AbstractBlock.Settings.create()));
 
     public static final Block PISTACHIO_LOG = registerBlock("pistachio_log", new PillarBlock(AbstractBlock.Settings.create()));
 
-    public static final Block LIQUID_HYDROGEN = registerBlock("liquid_hydrogen", new FluidBlock(ModFluids.LIQUID_HYDROGEN_STILL, AbstractBlock.Settings.copy(Blocks.WATER).replaceable().noCollision().strength(100.0f).pistonBehavior(PistonBehavior.DESTROY).dropsNothing().liquid().solid().sounds(BlockSoundGroup.SCULK)));
+    public static final Block LIQUID_HYDROGEN = registerBlock("liquid_hydrogen", new FluidBlock(ModFluids.LIQUID_HYDROGEN_STILL, AbstractBlock.Settings.create()));
+
+    @Deprecated
+    private static Block createOldStairsBlock(Block block) {
+        return new StairsBlock(block.getDefaultState(), AbstractBlock.Settings.copyShallow(block));
+    }
+
+    private static Block createStairsBlock(Block base) {
+        return new StairsBlock(base.getDefaultState(), AbstractBlock.Settings.copy(base));
+    }
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -70,7 +83,11 @@ public class ModBlocks {
         TheSector.LOGGER.info("Registering Mod Blocks for " + TheSector.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
+//            entries.add(ModBlocks.SECTOR_PORTAL_GENERATOR);
+//            entries.add(ModBlocks.SECTOR_PORTAL);
+
             entries.add(ModBlocks.DENSE_CLOUD);
+
             entries.add(ModBlocks.BLACK_GLASS_STONE);
             entries.add(ModBlocks.BLUE_GLASS_STONE);
             entries.add(ModBlocks.BROWN_GLASS_STONE);
@@ -87,11 +104,22 @@ public class ModBlocks {
             entries.add(ModBlocks.RED_GLASS_STONE);
             entries.add(ModBlocks.WHITE_GLASS_STONE);
             entries.add(ModBlocks.YELLOW_GLASS_STONE);
+
             entries.add(ModBlocks.RAW_PISTACHIO_BLOCK);
             entries.add(ModBlocks.PISTACHIO_BLOCK);
             entries.add(ModBlocks.PISTACHIO_VINE);
+
+            entries.add(ModBlocks.STEEL_BLOCK);
+            entries.add(ModBlocks.STEEL_SLAB);
+            entries.add(ModBlocks.STEEL_STAIRS);
+            entries.add(ModBlocks.STEEL_DOOR);
+            entries.add(ModBlocks.STEEL_TRAPDOOR);
+            entries.add(ModBlocks.STEEL_CONTROL_BLOCK);
+
             entries.add(ModBlocks.DRIPLEAF_LOG);
+
             entries.add(ModBlocks.PISTACHIO_LOG);
+
             entries.add(ModBlocks.LIQUID_HYDROGEN);
         });
     }

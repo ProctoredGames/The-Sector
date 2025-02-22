@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "the_sector:block/steel_control_block",
+      "x": 90
+    },
+    "facing=east": {
+      "model": "the_sector:block/steel_control_block",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "the_sector:block/steel_control_block"
+    },
+    "facing=south": {
+      "model": "the_sector:block/steel_control_block",
+      "y": 180
+    },
+    "facing=up": {
+      "model": "the_sector:block/steel_control_block",
+      "x": 270
+    },
+    "facing=west": {
+      "model": "the_sector:block/steel_control_block",
+      "y": 270
+    }
+  }
+}
