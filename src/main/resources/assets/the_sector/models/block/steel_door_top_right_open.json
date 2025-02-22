@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_right_open",
+  "textures": {
+    "bottom": "the_sector:block/steel_door_bottom",
+    "top": "the_sector:block/steel_door_top"
+  }
+}
