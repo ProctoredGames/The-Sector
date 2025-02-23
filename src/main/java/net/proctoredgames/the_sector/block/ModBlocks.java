@@ -27,6 +27,7 @@ public class ModBlocks {
     public static final Block STYROGLYTE = registerBlock("styroglyte", new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
     public static final Block GROWING_STYROGLYTE = registerBlock("growing_styroglyte", new GrassBlock(AbstractBlock.Settings.copy(Blocks.STONE).mapColor(MapColor.PALE_GREEN)));
 
+    //glass stone
     public static final Block BLACK_GLASS_STONE = registerBlock("black_glass_stone", new StainedGlassBlock(DyeColor.BLACK, AbstractBlock.Settings.create().mapColor(DyeColor.BLACK).instrument(NoteBlockInstrument.HAT).strength(0.3F).sounds(BlockSoundGroup.GLASS).nonOpaque().allowsSpawning(Blocks::never).solidBlock(Blocks::never).suffocates(Blocks::never).blockVision(Blocks::never)));
     public static final Block BLUE_GLASS_STONE = registerBlock("blue_glass_stone", new StainedGlassBlock(DyeColor.BLUE, AbstractBlock.Settings.create().mapColor(DyeColor.BLUE).instrument(NoteBlockInstrument.HAT).strength(0.3F).sounds(BlockSoundGroup.GLASS).nonOpaque().allowsSpawning(Blocks::never).solidBlock(Blocks::never).suffocates(Blocks::never).blockVision(Blocks::never)));
     public static final Block BROWN_GLASS_STONE = registerBlock("brown_glass_stone", new StainedGlassBlock(DyeColor.BROWN, AbstractBlock.Settings.create().mapColor(DyeColor.BROWN).instrument(NoteBlockInstrument.HAT).strength(0.3F).sounds(BlockSoundGroup.GLASS).nonOpaque().allowsSpawning(Blocks::never).solidBlock(Blocks::never).suffocates(Blocks::never).blockVision(Blocks::never)));
@@ -44,10 +45,12 @@ public class ModBlocks {
     public static final Block WHITE_GLASS_STONE = registerBlock("white_glass_stone", new StainedGlassBlock(DyeColor.WHITE, AbstractBlock.Settings.create().mapColor(DyeColor.WHITE).instrument(NoteBlockInstrument.HAT).strength(0.3F).sounds(BlockSoundGroup.GLASS).nonOpaque().allowsSpawning(Blocks::never).solidBlock(Blocks::never).suffocates(Blocks::never).blockVision(Blocks::never)));
     public static final Block YELLOW_GLASS_STONE = registerBlock("yellow_glass_stone", new StainedGlassBlock(DyeColor.YELLOW, AbstractBlock.Settings.create().mapColor(DyeColor.YELLOW).instrument(NoteBlockInstrument.HAT).strength(0.3F).sounds(BlockSoundGroup.GLASS).nonOpaque().allowsSpawning(Blocks::never).solidBlock(Blocks::never).suffocates(Blocks::never).blockVision(Blocks::never)));
 
+    //pistachio plant blocks
     public static final Block RAW_PISTACHIO_BLOCK = registerBlock("raw_pistachio_block", new RawPistachioBlock(AbstractBlock.Settings.create()));
     public static final Block PISTACHIO_BLOCK = registerBlock("pistachio_block", new PistachioBlock(AbstractBlock.Settings.create()));
     public static final Block PISTACHIO_VINE = registerBlock("pistachio_vine", new PistachioVineBlock(AbstractBlock.Settings.create()));
 
+    //steel blockset
     public static final Block STEEL_BLOCK = registerBlock("steel_block", new Block(AbstractBlock.Settings.create().mapColor(MapColor.DEEPSLATE_GRAY).instrument(NoteBlockInstrument.IRON_XYLOPHONE).requiresTool().strength(5.0F, 6.0F).sounds(BlockSoundGroup.METAL)));
     public static final Block STEEL_STAIRS = registerBlock("steel_stairs", createOldStairsBlock(STEEL_BLOCK));
     public static final Block STEEL_SLAB = registerBlock("steel_slab", new SlabBlock(AbstractBlock.Settings.copy(STEEL_BLOCK)));
