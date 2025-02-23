@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "minecraft:block/orange_stained_glass"
+    "all": "the_sector:block:orange_glass_stone"
   }
 }
