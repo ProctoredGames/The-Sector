@@ -20,7 +20,7 @@ public class ModItemGroups {
                         entries.add(ModItems.PISTACHIO);
                         entries.add(ModItems.PISTACHIO_SHELL);
                         entries.add(ModItems.SHELLED_PISTACHIO);
-
+                        // Add any new items here
                     }).build());
 
     public static final ItemGroup THE_SECTOR_BLOCKS = Registry.register(Registries.ITEM_GROUP,
@@ -28,9 +28,12 @@ public class ModItemGroups {
             FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.GROWING_STYROGLYTE))
                     .displayName(Text.translatable("itemgroup.the_sector.the_sector_blocks"))
                     .entries((displayContext, entries) -> {
+                        // Basic Blocks
                         entries.add(ModBlocks.DENSE_CLOUD);
                         entries.add(ModBlocks.STYROGLYTE);
                         entries.add(ModBlocks.GROWING_STYROGLYTE);
+
+                        // Glass Stones (color order)
                         entries.add(ModBlocks.WHITE_GLASS_STONE);
                         entries.add(ModBlocks.LIGHT_GRAY_GLASS_STONE);
                         entries.add(ModBlocks.GRAY_GLASS_STONE);
@@ -41,22 +44,84 @@ public class ModItemGroups {
                         entries.add(ModBlocks.YELLOW_GLASS_STONE);
                         entries.add(ModBlocks.LIME_GLASS_STONE);
                         entries.add(ModBlocks.GREEN_GLASS_STONE);
-                        entries.add(ModBlocks.LIGHT_BLUE_GLASS_STONE);
                         entries.add(ModBlocks.CYAN_GLASS_STONE);
+                        entries.add(ModBlocks.LIGHT_BLUE_GLASS_STONE);
                         entries.add(ModBlocks.BLUE_GLASS_STONE);
                         entries.add(ModBlocks.PURPLE_GLASS_STONE);
                         entries.add(ModBlocks.MAGENTA_GLASS_STONE);
                         entries.add(ModBlocks.PINK_GLASS_STONE);
+
+                        // Steel Set
                         entries.add(ModBlocks.STEEL_BLOCK);
-                        entries.add(ModBlocks.STEEL_CONTROL_BLOCK);
                         entries.add(ModBlocks.STEEL_STAIRS);
                         entries.add(ModBlocks.STEEL_SLAB);
                         entries.add(ModBlocks.STEEL_DOOR);
                         entries.add(ModBlocks.STEEL_TRAPDOOR);
+                        entries.add(ModBlocks.STEEL_CONTROL_BLOCK);
 
+                        // Pistachio Set
+                        entries.add(ModBlocks.RAW_PISTACHIO_BLOCK);
+                        entries.add(ModBlocks.PISTACHIO_BLOCK);
+                        entries.add(ModBlocks.PISTACHIO_VINE);
+                        entries.add(ModBlocks.PISTACHIO_LOG);
+                        entries.add(ModBlocks.PISTACHIO_WOOD);
+                        entries.add(ModBlocks.STRIPPED_PISTACHIO_LOG);
+                        entries.add(ModBlocks.STRIPPED_PISTACHIO_WOOD);
+                        entries.add(ModBlocks.PISTACHIO_PLANKS);
+                        entries.add(ModBlocks.PISTACHIO_STAIRS);
+                        entries.add(ModBlocks.PISTACHIO_SLAB);
+                        entries.add(ModBlocks.PISTACHIO_FENCE);
+                        entries.add(ModBlocks.PISTACHIO_FENCE_GATE);
+                        entries.add(ModBlocks.PISTACHIO_DOOR);
+                        entries.add(ModBlocks.PISTACHIO_TRAPDOOR);
+                        entries.add(ModBlocks.PISTACHIO_PRESSURE_PLATE);
+                        entries.add(ModBlocks.PISTACHIO_BUTTON);
+                        entries.add(ModBlocks.PISTACHIO_SIGN);
+                        entries.add(ModBlocks.PISTACHIO_WALL_SIGN);
+                        entries.add(ModBlocks.PISTACHIO_HANGING_SIGN);
+                        entries.add(ModBlocks.PISTACHIO_WALL_HANGING_SIGN);
+
+                        // Dripleaf Set
+                        entries.add(ModBlocks.DRIPLEAF_LOG);
+                        entries.add(ModBlocks.DRIPLEAF_WOOD);
+                        entries.add(ModBlocks.STRIPPED_DRIPLEAF_LOG);
+                        entries.add(ModBlocks.STRIPPED_DRIPLEAF_WOOD);
+                        entries.add(ModBlocks.DRIPLEAF_PLANKS);
+                        entries.add(ModBlocks.DRIPLEAF_STAIRS);
+                        entries.add(ModBlocks.DRIPLEAF_SLAB);
+                        entries.add(ModBlocks.DRIPLEAF_FENCE);
+                        entries.add(ModBlocks.DRIPLEAF_FENCE_GATE);
+                        entries.add(ModBlocks.DRIPLEAF_DOOR);
+                        entries.add(ModBlocks.DRIPLEAF_TRAPDOOR);
+                        entries.add(ModBlocks.DRIPLEAF_PRESSURE_PLATE);
+                        entries.add(ModBlocks.DRIPLEAF_BUTTON);
+                        entries.add(ModBlocks.DRIPLEAF_SIGN);
+                        entries.add(ModBlocks.DRIPLEAF_WALL_SIGN);
+                        entries.add(ModBlocks.DRIPLEAF_HANGING_SIGN);
+                        entries.add(ModBlocks.DRIPLEAF_WALL_HANGING_SIGN);
+
+                        // Hyderin Set
+                        entries.add(ModBlocks.HYDERIN_LOG);
+                        entries.add(ModBlocks.HYDERIN_WOOD);
+                        entries.add(ModBlocks.STRIPPED_HYDERIN_LOG);
+                        entries.add(ModBlocks.STRIPPED_HYDERIN_WOOD);
+                        entries.add(ModBlocks.HYDERIN_PLANKS);
+                        entries.add(ModBlocks.HYDERIN_STAIRS);
+                        entries.add(ModBlocks.HYDERIN_SLAB);
+                        entries.add(ModBlocks.HYDERIN_FENCE);
+                        entries.add(ModBlocks.HYDERIN_FENCE_GATE);
+                        entries.add(ModBlocks.HYDERIN_DOOR);
+                        entries.add(ModBlocks.HYDERIN_TRAPDOOR);
+                        entries.add(ModBlocks.HYDERIN_PRESSURE_PLATE);
+                        entries.add(ModBlocks.HYDERIN_BUTTON);
+                        entries.add(ModBlocks.HYDERIN_SIGN);
+                        entries.add(ModBlocks.HYDERIN_WALL_SIGN);
+                        entries.add(ModBlocks.HYDERIN_HANGING_SIGN);
+                        entries.add(ModBlocks.HYDERIN_WALL_HANGING_SIGN);
+
+                        // Fluids
+                        entries.add(ModBlocks.LIQUID_HYDROGEN);
                     }).build());
-
-
 
     public static void registerItemGroups() {
         TheSector.LOGGER.info("Registering Item Groups for " + TheSector.MOD_ID);
