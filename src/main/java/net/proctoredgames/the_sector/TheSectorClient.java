@@ -34,6 +34,7 @@ public class TheSectorClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BLACK_GLASS_STONE, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BROWN_GLASS_STONE, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DENSE_CLOUD, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.STEEL_TRAPDOOR, RenderLayer.getCutoutMipped());
         ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> 0x33CCFF, ModBlocks.LIQUID_HYDROGEN);
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LIQUID_HYDROGEN, RenderLayer.getTranslucent());
     }
