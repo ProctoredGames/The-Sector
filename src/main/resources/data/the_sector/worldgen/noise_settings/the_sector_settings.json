@@ -421,6 +421,36 @@
               "type": "minecraft:condition",
               "if_true": {
                 "type": "minecraft:noise_threshold",
+                "max_threshold": -0.8,
+                "min_threshold": -1.0,
+                "noise": "the_sector:glasslands_coloring"
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "the_sector:lime_glass_stone"
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:noise_threshold",
+                "max_threshold": -0.6,
+                "min_threshold": -0.8,
+                "noise": "the_sector:glasslands_coloring"
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "the_sector:blue_glass_stone"
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:noise_threshold",
                 "max_threshold": -0.4,
                 "min_threshold": -0.6,
                 "noise": "the_sector:glasslands_coloring"
@@ -473,7 +503,7 @@
               "then_run": {
                 "type": "minecraft:block",
                 "result_state": {
-                  "Name": "the_sector:cyan_glass_stone"
+                  "Name": "the_sector:pink_glass_stone"
                 }
               }
             },
@@ -510,6 +540,21 @@
             {
               "type": "minecraft:condition",
               "if_true": {
+                "type": "minecraft:noise_threshold",
+                "max_threshold": 0.8,
+                "min_threshold": 0.6,
+                "noise": "the_sector:glasslands_coloring"
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "the_sector:green_glass_stone"
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
                 "type": "minecraft:stone_depth",
                 "add_surface_depth": false,
                 "offset": 0,
@@ -519,7 +564,7 @@
               "then_run": {
                 "type": "minecraft:block",
                 "result_state": {
-                  "Name": "the_sector:blue_glass_stone"
+                  "Name": "the_sector:cyan_glass_stone"
                 }
               }
             }
@@ -564,19 +609,6 @@
               }
             }
           ]
-        }
-      },
-      {
-        "type": "minecraft:condition",
-        "if_true": {
-          "type": "minecraft:biome",
-          "biome_is": ["the_sector:cloud_fields"]
-        },
-        "then_run": {
-          "type": "minecraft:block",
-          "result_state": {
-            "Name": "minecraft:air"
-          }
         }
       }
     ]

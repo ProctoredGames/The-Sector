@@ -29,7 +29,7 @@
       "above_bottom": -100
     },
     "probability": 0.2,
-    "replaceable": "#the_sector:glass_stone",
+    "replaceable": "#the_sector:glasslands_crack_replaceable",
     "shape": {
       "distance_factor": {
         "type": "minecraft:uniform",
