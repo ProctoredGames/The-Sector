@@ -28,7 +28,7 @@
     "lava_level": {
       "above_bottom": -100
     },
-    "probability": 0.3,
+    "probability": 0.2,
     "replaceable": "#the_sector:glass_stone",
     "shape": {
       "distance_factor": {
@@ -43,8 +43,8 @@
       },
       "thickness": {
         "type": "minecraft:trapezoid",
-        "max": 10.0,
-        "min": 0.0,
+        "max": 8.0,
+        "min": 3.0,
         "plateau": 5.0
       },
       "vertical_radius_center_factor": 0.0,
