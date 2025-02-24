@@ -77,9 +77,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.PISTACHIO_PRESSURE_PLATE);
                         entries.add(ModBlocks.PISTACHIO_BUTTON);
                         entries.add(ModBlocks.PISTACHIO_SIGN);
-                        entries.add(ModBlocks.PISTACHIO_WALL_SIGN);
                         entries.add(ModBlocks.PISTACHIO_HANGING_SIGN);
-                        entries.add(ModBlocks.PISTACHIO_WALL_HANGING_SIGN);
 
                         // Dripleaf Set
                         entries.add(ModBlocks.DRIPLEAF_LOG);
@@ -96,9 +94,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DRIPLEAF_PRESSURE_PLATE);
                         entries.add(ModBlocks.DRIPLEAF_BUTTON);
                         entries.add(ModBlocks.DRIPLEAF_SIGN);
-                        entries.add(ModBlocks.DRIPLEAF_WALL_SIGN);
                         entries.add(ModBlocks.DRIPLEAF_HANGING_SIGN);
-                        entries.add(ModBlocks.DRIPLEAF_WALL_HANGING_SIGN);
 
                         // Hyderin Set
                         entries.add(ModBlocks.HYDERIN_LOG);
@@ -115,12 +111,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.HYDERIN_PRESSURE_PLATE);
                         entries.add(ModBlocks.HYDERIN_BUTTON);
                         entries.add(ModBlocks.HYDERIN_SIGN);
-                        entries.add(ModBlocks.HYDERIN_WALL_SIGN);
                         entries.add(ModBlocks.HYDERIN_HANGING_SIGN);
-                        entries.add(ModBlocks.HYDERIN_WALL_HANGING_SIGN);
 
-                        // Fluids
-                        entries.add(ModBlocks.LIQUID_HYDROGEN);
                     }).build());
 
     public static void registerItemGroups() {
