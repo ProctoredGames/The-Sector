@@ -38,7 +38,9 @@
     [
     ],
     [
-
+      "the_sector:trees_sector_plains",
+      "the_sector:patch_tall_gnarlweed",
+      "the_sector:patch_gnarlweed"
     ],
     [
       "minecraft:freeze_top_layer"

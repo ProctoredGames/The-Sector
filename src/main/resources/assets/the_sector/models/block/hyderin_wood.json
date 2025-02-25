@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "the_sector:block/hyderin_log",
+    "side": "the_sector:block/hyderin_log"
+  }
+}

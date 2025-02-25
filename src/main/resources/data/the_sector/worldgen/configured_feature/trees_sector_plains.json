@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": {
+      "feature": "the_sector:pistachio_tree",
+      "placement": []
+    },
+    "features": [
+      {
+        "chance": 0.5,
+        "feature": {
+          "feature": "the_sector:pistachio_tree",
+          "placement": []
+        }
+      }
+    ]
+  }
+}

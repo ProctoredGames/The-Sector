@@ -1,9 +1,9 @@
 {
 	"schemaVersion": 1,
 	"id": "the_sector",
-	"version": "0.1",
+	"version": "Pre Alpha 0.1",
 	"name": "The Sector",
-	"description": "Adds a new dimension to minecraft set on a fantasy alien world...",
+	"description": "Adds a new dimension to Minecraft set on a fantasy alien world...",
 	"authors": [
 		"ProctoredGames"
 	],

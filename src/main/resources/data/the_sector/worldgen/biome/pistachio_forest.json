@@ -17,7 +17,7 @@
     "water_fog_color": 329011,
     "fog_start": 0.01,
     "fog_end": 0.02,
-    "grass_color": 13172654
+    "grass_color": 1886525
   },
   "features": [
     [],
@@ -40,7 +40,9 @@
     [
     ],
     [
-      "the_sector:pistachio_tree"
+      "the_sector:trees_pistachio",
+      "the_sector:patch_tall_flowerable_gnarlweed",
+      "the_sector:patch_flowerable_gnarlweed"
     ],
     [
       "minecraft:freeze_top_layer"

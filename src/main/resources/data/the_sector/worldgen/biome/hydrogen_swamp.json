@@ -45,12 +45,8 @@
     [
     ],
     [
-      "minecraft:glow_lichen",
-      "minecraft:trees_swamp",
-      "minecraft:patch_waterlily",
-      "minecraft:brown_mushroom_normal",
-      "minecraft:red_mushroom_normal",
-      "minecraft:seagrass_swamp"
+      "the_sector:patch_tall_gnarlweed",
+      "the_sector:patch_flowerable_gnarlweed"
     ],
     [
       "minecraft:freeze_top_layer"

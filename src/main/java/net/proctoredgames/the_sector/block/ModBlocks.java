@@ -95,6 +95,7 @@ public class ModBlocks {
             new WallHangingSignBlock(ModWoodType.DRIPLEAF, AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN).dropsLike(DRIPLEAF_HANGING_SIGN).solid()));
 
     //pistachio blockset
+    public static final Block PISTACHIO_LEAVES = registerBlock("pistachio_leaves", new NonDecayableLeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
     public static final Block PISTACHIO_LOG = registerBlock("pistachio_log",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
     public static final Block PISTACHIO_WOOD = registerBlock("pistachio_wood",
@@ -129,6 +130,9 @@ public class ModBlocks {
             new HangingSignBlock(ModWoodType.PISTACHIO, AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN).solid()));
     public static final Block PISTACHIO_WALL_HANGING_SIGN = registerBlock("pistachio_wall_hanging_sign",
             new WallHangingSignBlock(ModWoodType.PISTACHIO, AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN).dropsLike(PISTACHIO_HANGING_SIGN).solid()));
+
+    public static final Block HYDERIN_FLOWER = registerBlock("hyderin_flower",
+            new Block(AbstractBlock.Settings.copy(Blocks.CORNFLOWER)));
 
     //hyderin blockset
     public static final Block HYDERIN_LOG = registerBlock("hyderin_log",
@@ -165,6 +169,15 @@ public class ModBlocks {
             new HangingSignBlock(ModWoodType.HYDERIN, AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN).solid()));
     public static final Block HYDERIN_WALL_HANGING_SIGN = registerBlock("hyderin_wall_hanging_sign",
             new WallHangingSignBlock(ModWoodType.HYDERIN, AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN).dropsLike(HYDERIN_HANGING_SIGN).solid()));
+
+    public static final Block SHORT_GNARLWEED = registerBlock("short_gnarlweed", new ShortPlantBlock(AbstractBlock.Settings.create().mapColor(MapColor.DARK_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XYZ).burnable().pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block SHORT_FLOWERING_GNARLWEED = registerBlock("short_flowering_gnarlweed", new ShortPlantBlock(AbstractBlock.Settings.create().mapColor(MapColor.DARK_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XYZ).burnable().pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block SHORT_CHARRED_GNARLWEED = registerBlock("short_charred_gnarlweed", new ShortPlantBlock(AbstractBlock.Settings.create().mapColor(MapColor.DARK_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XYZ).burnable().pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block SHORT_EMBERED_GNARLWEED = registerBlock("short_embered_gnarlweed", new ShortPlantBlock(AbstractBlock.Settings.create().mapColor(MapColor.DARK_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XYZ).burnable().pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block TALL_GNARLWEED = registerBlock("tall_gnarlweed", new TallPlantBlock(AbstractBlock.Settings.create().mapColor(MapColor.DARK_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block TALL_FLOWERING_GNARLWEED = registerBlock("tall_flowering_gnarlweed", new TallPlantBlock(AbstractBlock.Settings.create().mapColor(MapColor.DARK_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block TALL_CHARRED_GNARLWEED = registerBlock("tall_charred_gnarlweed", new TallPlantBlock(AbstractBlock.Settings.create().mapColor(MapColor.DARK_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block TALL_EMBERED_GNARLWEED = registerBlock("tall_embered_gnarlweed", new TallPlantBlock(AbstractBlock.Settings.create().mapColor(MapColor.DARK_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY)));
 
 
     public static final Block LIQUID_HYDROGEN = registerBlock("liquid_hydrogen", new FluidBlock(ModFluids.LIQUID_HYDROGEN_STILL, AbstractBlock.Settings.create()));
@@ -213,11 +226,13 @@ public class ModBlocks {
             entries.add(ModBlocks.WHITE_GLASS_STONE);
             entries.add(ModBlocks.YELLOW_GLASS_STONE);
 
+            // Pistachio Food Blocks
             entries.add(ModBlocks.RAW_PISTACHIO_BLOCK);
             entries.add(ModBlocks.PISTACHIO_BLOCK);
             entries.add(ModBlocks.PISTACHIO_VINE);
 
             // Pistachio Set
+            entries.add(ModBlocks.PISTACHIO_LEAVES);
             entries.add(ModBlocks.PISTACHIO_LOG);
             entries.add(ModBlocks.PISTACHIO_WOOD);
             entries.add(ModBlocks.STRIPPED_PISTACHIO_LOG);
@@ -263,6 +278,8 @@ public class ModBlocks {
             entries.add(ModBlocks.DRIPLEAF_HANGING_SIGN);
             entries.add(ModBlocks.DRIPLEAF_WALL_HANGING_SIGN);
 
+            entries.add(ModBlocks.HYDERIN_FLOWER);
+
             // Hyderin Set
             entries.add(ModBlocks.HYDERIN_LOG);
             entries.add(ModBlocks.HYDERIN_WOOD);
@@ -281,6 +298,16 @@ public class ModBlocks {
             entries.add(ModBlocks.HYDERIN_WALL_SIGN);
             entries.add(ModBlocks.HYDERIN_HANGING_SIGN);
             entries.add(ModBlocks.HYDERIN_WALL_HANGING_SIGN);
+
+            // Gnarlweed
+            entries.add(ModBlocks.SHORT_GNARLWEED);
+            entries.add(ModBlocks.SHORT_FLOWERING_GNARLWEED);
+            entries.add(ModBlocks.SHORT_CHARRED_GNARLWEED);
+            entries.add(ModBlocks.SHORT_EMBERED_GNARLWEED);
+            entries.add(ModBlocks.TALL_GNARLWEED);
+            entries.add(ModBlocks.TALL_FLOWERING_GNARLWEED);
+            entries.add(ModBlocks.TALL_CHARRED_GNARLWEED);
+            entries.add(ModBlocks.TALL_EMBERED_GNARLWEED);
 
             // Fluids
             entries.add(ModBlocks.LIQUID_HYDROGEN);

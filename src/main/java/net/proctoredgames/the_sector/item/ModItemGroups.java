@@ -59,10 +59,13 @@ public class ModItemGroups {
                         entries.add(ModBlocks.STEEL_TRAPDOOR);
                         entries.add(ModBlocks.STEEL_CONTROL_BLOCK);
 
-                        // Pistachio Set
+                        //pistachio Food Blocks
                         entries.add(ModBlocks.RAW_PISTACHIO_BLOCK);
                         entries.add(ModBlocks.PISTACHIO_BLOCK);
                         entries.add(ModBlocks.PISTACHIO_VINE);
+
+                        // Pistachio Set
+                        entries.add(ModBlocks.PISTACHIO_LEAVES);
                         entries.add(ModBlocks.PISTACHIO_LOG);
                         entries.add(ModBlocks.PISTACHIO_WOOD);
                         entries.add(ModBlocks.STRIPPED_PISTACHIO_LOG);
@@ -112,6 +115,16 @@ public class ModItemGroups {
                         entries.add(ModBlocks.HYDERIN_BUTTON);
                         entries.add(ModBlocks.HYDERIN_SIGN);
                         entries.add(ModBlocks.HYDERIN_HANGING_SIGN);
+
+                        //Gnarlweed
+                        entries.add(ModBlocks.SHORT_GNARLWEED);
+                        entries.add(ModBlocks.SHORT_FLOWERING_GNARLWEED);
+                        entries.add(ModBlocks.SHORT_CHARRED_GNARLWEED);
+                        entries.add(ModBlocks.SHORT_EMBERED_GNARLWEED);
+                        entries.add(ModBlocks.TALL_GNARLWEED);
+                        entries.add(ModBlocks.TALL_FLOWERING_GNARLWEED);
+                        entries.add(ModBlocks.TALL_CHARRED_GNARLWEED);
+                        entries.add(ModBlocks.TALL_EMBERED_GNARLWEED);
 
                     }).build());
 

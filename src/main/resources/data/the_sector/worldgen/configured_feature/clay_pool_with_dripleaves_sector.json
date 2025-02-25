@@ -10,7 +10,7 @@
         "Name": "minecraft:clay"
       }
     },
-    "replaceable": "#the_sector:pistachio_jungle_ground_replaceable",
+    "replaceable": "#the_sector:sector_carver_replaceable",
     "surface": "floor",
     "vegetation_chance": 0.1,
     "vegetation_feature": {

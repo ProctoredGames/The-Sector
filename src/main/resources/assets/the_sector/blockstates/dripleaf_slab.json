@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "the_sector:block/dripleaf_slab"
+    },
+    "type=double": {
+      "model": "the_sector:block/dripleaf_planks"
+    },
+    "type=top": {
+      "model": "the_sector:block/dripleaf_slab_top"
+    }
+  }
+}

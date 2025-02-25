@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_left",
+  "textures": {
+    "bottom": "the_sector:block/hyderin_door_bottom",
+    "top": "the_sector:block/hyderin_door_top"
+  }
+}

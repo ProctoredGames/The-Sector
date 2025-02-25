@@ -16,7 +16,12 @@ public class TheSectorClient implements ClientModInitializer {
             return BiomeColors.getGrassColor(world, pos);
         }, ModBlocks.GROWING_STYROGLYTE);
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GROWING_STYROGLYTE, RenderLayer.getCutoutMipped());
-        ColorProviderRegistry.ITEM.register((stack, tintIndex) -> 0xC8E580, ModBlocks.GROWING_STYROGLYTE);
+        ColorProviderRegistry.ITEM.register((stack, tintIndex) -> 13172654, ModBlocks.GROWING_STYROGLYTE);
+
+        ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> 1886525, ModBlocks.PISTACHIO_LEAVES);
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PISTACHIO_LEAVES, RenderLayer.getCutoutMipped());
+        ColorProviderRegistry.ITEM.register((stack, tintIndex) -> 1886525, ModBlocks.PISTACHIO_LEAVES);
+
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.WHITE_GLASS_STONE, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.RED_GLASS_STONE, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ORANGE_GLASS_STONE, RenderLayer.getTranslucent());
@@ -33,8 +38,10 @@ public class TheSectorClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LIGHT_GRAY_GLASS_STONE, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BLACK_GLASS_STONE, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BROWN_GLASS_STONE, RenderLayer.getTranslucent());
+
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DENSE_CLOUD, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.STEEL_TRAPDOOR, RenderLayer.getCutoutMipped());
+
         ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> 0x33CCFF, ModBlocks.LIQUID_HYDROGEN);
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LIQUID_HYDROGEN, RenderLayer.getTranslucent());
     }

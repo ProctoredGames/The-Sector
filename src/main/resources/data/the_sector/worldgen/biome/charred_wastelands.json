@@ -58,8 +58,8 @@
       "the_sector:lake_lava_sector"
     ],
     [
-      "minecraft:patch_tall_grass_2",
-      "minecraft:patch_grass_plain"
+      "the_sector:patch_charred_gnarlweed",
+      "the_sector:patch_tall_charred_gnarlweed"
     ],
     [
       "minecraft:freeze_top_layer"

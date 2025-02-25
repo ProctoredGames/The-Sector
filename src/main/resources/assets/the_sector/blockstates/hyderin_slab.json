@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "the_sector:block/hyderin_slab"
+    },
+    "type=double": {
+      "model": "the_sector:block/hyderin_planks"
+    },
+    "type=top": {
+      "model": "the_sector:block/hyderin_slab_top"
+    }
+  }
+}
