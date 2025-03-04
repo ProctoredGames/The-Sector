@@ -20,8 +20,8 @@
       "sound": "minecraft:music.overworld.desert"
     },
     "sky_color": 7254527,
-    "water_color": 4159204,
-    "water_fog_color": 329011,
+    "water_color": 2678783,
+    "water_fog_color": 2678783,
     "fog_start": 0.01,
     "fog_end": 0.02
   },

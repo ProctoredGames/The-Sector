@@ -13,8 +13,8 @@
       "tick_delay": 6000
     },
     "sky_color": 7907327,
-    "water_color": 4159204,
-    "water_fog_color": 329011,
+    "water_color": 2678783,
+    "water_fog_color": 2678783,
     "fog_start": 0.01,
     "fog_end": 0.02,
     "grass_color": 13172654

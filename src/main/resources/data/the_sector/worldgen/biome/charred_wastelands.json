@@ -27,11 +27,11 @@
       "options": {
         "type": "minecraft:white_ash"
       },
-      "probability": 0.118093334
+      "probability": 0.2
     },
     "sky_color": 7254527,
-    "water_color": 4159204,
-    "water_fog_color": 329011,
+    "water_color": 2678783,
+    "water_fog_color": 2678783,
     "fog_start": 0.05,
     "fog_end": 0.1,
     "grass_color": 13172654,
@@ -54,6 +54,7 @@
     ],
     [],
     [
+      "the_sector:ash_patch",
       "the_sector:spring_lava_sector",
       "the_sector:lake_lava_sector"
     ],
