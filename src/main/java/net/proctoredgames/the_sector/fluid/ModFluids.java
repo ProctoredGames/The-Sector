@@ -7,8 +7,8 @@ import net.minecraft.util.Identifier;
 import net.proctoredgames.the_sector.TheSector;
 
 public class ModFluids {
-    public static final FlowableFluid LIQUID_HYDROGEN_STILL = register("liquid_hydrogen_still", new LiquidHydrogenFluid.Still());
-    public static final FlowableFluid LIQUID_HYDROGEN_FLOWING = register("liquid_hydrogen_flow", new LiquidHydrogenFluid.Flowing());
+    public static final FlowableFluid LIQUID_HYDROGEN = register("liquid_hydrogen_still", new LiquidHydrogenFluid.Still());
+    public static final FlowableFluid FLOWING_LIQUID_HYDROGEN = register("liquid_hydrogen_flow", new LiquidHydrogenFluid.Flowing());
 
 
     private static FlowableFluid register(String name, FlowableFluid flowableFluid) {

@@ -18,7 +18,7 @@ public class ModItems {
     public static final Item PISTACHIO_SHELL = registerItem("pistachio_shell", new Item(new Item.Settings()));
     public static final Item SHELLED_PISTACHIO = registerItem("shelled_pistachio", new Item(new Item.Settings()));
 
-    public static final Item LIQUID_HYDROGEN_BUCKET = registerItem("liquid_hydrogen_bucket", new BucketItem(ModFluids.LIQUID_HYDROGEN_STILL,
+    public static final Item LIQUID_HYDROGEN_BUCKET = registerItem("liquid_hydrogen_bucket", new BucketItem(ModFluids.LIQUID_HYDROGEN,
             new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
     private static Item registerItem(String name, Item item){

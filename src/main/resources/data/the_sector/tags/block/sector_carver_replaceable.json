@@ -1,6 +1,9 @@
 {
   "values": [
     "the_sector:styroglyte",
-    "the_sector:growing_styroglyte"
+    "the_sector:growing_styroglyte",
+    "the_sector:charred_styroglyte",
+    "the_sector:ash",
+    "minecraft:clay"
   ]
 }

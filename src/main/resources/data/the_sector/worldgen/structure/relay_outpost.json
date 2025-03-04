@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:desert_pyramid",
+  "biomes": "#the_sector:has_structure/relay_outpost",
+  "spawn_overrides": {},
+  "step": "surface_structures"
+}

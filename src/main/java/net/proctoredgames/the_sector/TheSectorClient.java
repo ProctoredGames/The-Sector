@@ -7,6 +7,7 @@ import net.minecraft.client.color.world.BiomeColors;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.world.biome.GrassColors;
 import net.proctoredgames.the_sector.block.ModBlocks;
+import net.proctoredgames.the_sector.fluid.ModFluids;
 
 public class TheSectorClient implements ClientModInitializer {
     @Override
@@ -42,7 +43,8 @@ public class TheSectorClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DENSE_CLOUD, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.STEEL_TRAPDOOR, RenderLayer.getCutoutMipped());
 
-        ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> 0x33CCFF, ModBlocks.LIQUID_HYDROGEN);
-        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LIQUID_HYDROGEN, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putFluid(ModFluids.LIQUID_HYDROGEN, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putFluid(ModFluids.FLOWING_LIQUID_HYDROGEN, RenderLayer.getTranslucent());
+
     }
 }

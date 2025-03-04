@@ -67,7 +67,7 @@ public class DenseCloudBlock extends TransparentBlock {
         Vec3d velocity = entity.getVelocity();
         double horizontalMovement = Math.hypot(velocity.x, velocity.z);
 
-        if (horizontalMovement > 0.1) {
+        if (horizontalMovement >= 0.1) {
             // Move upward when moving horizontally
             entity.setVelocity(velocity.x, 0.3, velocity.z);
         } else {

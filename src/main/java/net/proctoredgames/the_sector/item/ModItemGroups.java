@@ -29,9 +29,12 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.the_sector.the_sector_blocks"))
                     .entries((displayContext, entries) -> {
                         // Basic Blocks
-                        entries.add(ModBlocks.DENSE_CLOUD);
                         entries.add(ModBlocks.STYROGLYTE);
                         entries.add(ModBlocks.GROWING_STYROGLYTE);
+                        entries.add(ModBlocks.COBBLED_STYROGLYTE);
+                        entries.add(ModBlocks.CHARRED_STYROGLYTE);
+                        entries.add(ModBlocks.ASH);
+                        entries.add(ModBlocks.DENSE_CLOUD);
 
                         // Glass Stones (color order)
                         entries.add(ModBlocks.WHITE_GLASS_STONE);

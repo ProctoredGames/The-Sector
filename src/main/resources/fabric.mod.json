@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "the_sector",
-	"version": "Pre Alpha 0.2",
+	"version": "${version}",
 	"name": "The Sector",
 	"description": "Adds a new dimension to Minecraft set on a fantasy alien world...",
 	"authors": [

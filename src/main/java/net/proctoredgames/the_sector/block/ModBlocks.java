@@ -24,8 +24,11 @@ import java.util.function.Function;
 public class ModBlocks {
     public static final Block DENSE_CLOUD = registerBlock("dense_cloud", new DenseCloudBlock(AbstractBlock.Settings.create()));
 
+    public static final Block CHARRED_STYROGLYTE = registerBlock("charred_styroglyte", new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
     public static final Block STYROGLYTE = registerBlock("styroglyte", new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
+    public static final Block COBBLED_STYROGLYTE = registerBlock("cobbled_styroglyte", new Block(AbstractBlock.Settings.copy(Blocks.COBBLESTONE)));
     public static final Block GROWING_STYROGLYTE = registerBlock("growing_styroglyte", new GrassBlock(AbstractBlock.Settings.copy(Blocks.STONE).mapColor(MapColor.PALE_GREEN)));
+    public static final Block ASH = registerBlock("ash", new Block(AbstractBlock.Settings.copy(Blocks.SAND)));
 
     //glass stone
     public static final Block BLACK_GLASS_STONE = registerBlock("black_glass_stone", new StainedGlassBlock(DyeColor.BLACK, AbstractBlock.Settings.create().mapColor(DyeColor.BLACK).instrument(NoteBlockInstrument.HAT).strength(0.3F).sounds(BlockSoundGroup.GLASS).nonOpaque().allowsSpawning(Blocks::never).solidBlock(Blocks::never).suffocates(Blocks::never).blockVision(Blocks::never)));
@@ -180,7 +183,7 @@ public class ModBlocks {
     public static final Block TALL_EMBERED_GNARLWEED = registerBlock("tall_embered_gnarlweed", new TallPlantBlock(AbstractBlock.Settings.create().mapColor(MapColor.DARK_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY)));
 
 
-    public static final Block LIQUID_HYDROGEN = registerBlock("liquid_hydrogen", new FluidBlock(ModFluids.LIQUID_HYDROGEN_STILL, AbstractBlock.Settings.create()));
+    public static final Block LIQUID_HYDROGEN = registerBlock("liquid_hydrogen", new FluidBlock(ModFluids.LIQUID_HYDROGEN, AbstractBlock.Settings.create().mapColor(MapColor.DIAMOND_BLUE).replaceable().noCollision().strength(100.0F).pistonBehavior(PistonBehavior.DESTROY).dropsNothing().liquid().sounds(BlockSoundGroup.INTENTIONALLY_EMPTY)));
 
     @Deprecated
     private static Block createOldStairsBlock(Block block) {
@@ -203,114 +206,5 @@ public class ModBlocks {
 
     public static void registerModBlocks() {
         TheSector.LOGGER.info("Registering Mod Blocks for " + TheSector.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
-            // Dense Cloud
-            entries.add(ModBlocks.DENSE_CLOUD);
-
-            // Glass Stones
-            entries.add(ModBlocks.BLACK_GLASS_STONE);
-            entries.add(ModBlocks.BLUE_GLASS_STONE);
-            entries.add(ModBlocks.BROWN_GLASS_STONE);
-            entries.add(ModBlocks.CYAN_GLASS_STONE);
-            entries.add(ModBlocks.GRAY_GLASS_STONE);
-            entries.add(ModBlocks.GREEN_GLASS_STONE);
-            entries.add(ModBlocks.LIGHT_BLUE_GLASS_STONE);
-            entries.add(ModBlocks.LIGHT_GRAY_GLASS_STONE);
-            entries.add(ModBlocks.LIME_GLASS_STONE);
-            entries.add(ModBlocks.MAGENTA_GLASS_STONE);
-            entries.add(ModBlocks.ORANGE_GLASS_STONE);
-            entries.add(ModBlocks.PINK_GLASS_STONE);
-            entries.add(ModBlocks.PURPLE_GLASS_STONE);
-            entries.add(ModBlocks.RED_GLASS_STONE);
-            entries.add(ModBlocks.WHITE_GLASS_STONE);
-            entries.add(ModBlocks.YELLOW_GLASS_STONE);
-
-            // Pistachio Food Blocks
-            entries.add(ModBlocks.RAW_PISTACHIO_BLOCK);
-            entries.add(ModBlocks.PISTACHIO_BLOCK);
-            entries.add(ModBlocks.PISTACHIO_VINE);
-
-            // Pistachio Set
-            entries.add(ModBlocks.PISTACHIO_LEAVES);
-            entries.add(ModBlocks.PISTACHIO_LOG);
-            entries.add(ModBlocks.PISTACHIO_WOOD);
-            entries.add(ModBlocks.STRIPPED_PISTACHIO_LOG);
-            entries.add(ModBlocks.STRIPPED_PISTACHIO_WOOD);
-            entries.add(ModBlocks.PISTACHIO_PLANKS);
-            entries.add(ModBlocks.PISTACHIO_STAIRS);
-            entries.add(ModBlocks.PISTACHIO_SLAB);
-            entries.add(ModBlocks.PISTACHIO_FENCE);
-            entries.add(ModBlocks.PISTACHIO_FENCE_GATE);
-            entries.add(ModBlocks.PISTACHIO_DOOR);
-            entries.add(ModBlocks.PISTACHIO_TRAPDOOR);
-            entries.add(ModBlocks.PISTACHIO_PRESSURE_PLATE);
-            entries.add(ModBlocks.PISTACHIO_BUTTON);
-            entries.add(ModBlocks.PISTACHIO_SIGN);
-            entries.add(ModBlocks.PISTACHIO_WALL_SIGN);
-            entries.add(ModBlocks.PISTACHIO_HANGING_SIGN);
-            entries.add(ModBlocks.PISTACHIO_WALL_HANGING_SIGN);
-
-            // Steel Set
-            entries.add(ModBlocks.STEEL_BLOCK);
-            entries.add(ModBlocks.STEEL_SLAB);
-            entries.add(ModBlocks.STEEL_STAIRS);
-            entries.add(ModBlocks.STEEL_DOOR);
-            entries.add(ModBlocks.STEEL_TRAPDOOR);
-            entries.add(ModBlocks.STEEL_CONTROL_BLOCK);
-
-            // Dripleaf Set
-            entries.add(ModBlocks.DRIPLEAF_LOG);
-            entries.add(ModBlocks.DRIPLEAF_WOOD);
-            entries.add(ModBlocks.STRIPPED_DRIPLEAF_LOG);
-            entries.add(ModBlocks.STRIPPED_DRIPLEAF_WOOD);
-            entries.add(ModBlocks.DRIPLEAF_PLANKS);
-            entries.add(ModBlocks.DRIPLEAF_STAIRS);
-            entries.add(ModBlocks.DRIPLEAF_SLAB);
-            entries.add(ModBlocks.DRIPLEAF_FENCE);
-            entries.add(ModBlocks.DRIPLEAF_FENCE_GATE);
-            entries.add(ModBlocks.DRIPLEAF_DOOR);
-            entries.add(ModBlocks.DRIPLEAF_TRAPDOOR);
-            entries.add(ModBlocks.DRIPLEAF_PRESSURE_PLATE);
-            entries.add(ModBlocks.DRIPLEAF_BUTTON);
-            entries.add(ModBlocks.DRIPLEAF_SIGN);
-            entries.add(ModBlocks.DRIPLEAF_WALL_SIGN);
-            entries.add(ModBlocks.DRIPLEAF_HANGING_SIGN);
-            entries.add(ModBlocks.DRIPLEAF_WALL_HANGING_SIGN);
-
-            entries.add(ModBlocks.HYDERIN_FLOWER);
-
-            // Hyderin Set
-            entries.add(ModBlocks.HYDERIN_LOG);
-            entries.add(ModBlocks.HYDERIN_WOOD);
-            entries.add(ModBlocks.STRIPPED_HYDERIN_LOG);
-            entries.add(ModBlocks.STRIPPED_HYDERIN_WOOD);
-            entries.add(ModBlocks.HYDERIN_PLANKS);
-            entries.add(ModBlocks.HYDERIN_STAIRS);
-            entries.add(ModBlocks.HYDERIN_SLAB);
-            entries.add(ModBlocks.HYDERIN_FENCE);
-            entries.add(ModBlocks.HYDERIN_FENCE_GATE);
-            entries.add(ModBlocks.HYDERIN_DOOR);
-            entries.add(ModBlocks.HYDERIN_TRAPDOOR);
-            entries.add(ModBlocks.HYDERIN_PRESSURE_PLATE);
-            entries.add(ModBlocks.HYDERIN_BUTTON);
-            entries.add(ModBlocks.HYDERIN_SIGN);
-            entries.add(ModBlocks.HYDERIN_WALL_SIGN);
-            entries.add(ModBlocks.HYDERIN_HANGING_SIGN);
-            entries.add(ModBlocks.HYDERIN_WALL_HANGING_SIGN);
-
-            // Gnarlweed
-            entries.add(ModBlocks.SHORT_GNARLWEED);
-            entries.add(ModBlocks.SHORT_FLOWERING_GNARLWEED);
-            entries.add(ModBlocks.SHORT_CHARRED_GNARLWEED);
-            entries.add(ModBlocks.SHORT_EMBERED_GNARLWEED);
-            entries.add(ModBlocks.TALL_GNARLWEED);
-            entries.add(ModBlocks.TALL_FLOWERING_GNARLWEED);
-            entries.add(ModBlocks.TALL_CHARRED_GNARLWEED);
-            entries.add(ModBlocks.TALL_EMBERED_GNARLWEED);
-
-            // Fluids
-            entries.add(ModBlocks.LIQUID_HYDROGEN);
-        });
     }
 }
