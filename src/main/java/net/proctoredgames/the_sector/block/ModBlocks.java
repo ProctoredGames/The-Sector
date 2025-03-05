@@ -29,6 +29,10 @@ public class ModBlocks {
     public static final Block COBBLED_STYROGLYTE = registerBlock("cobbled_styroglyte", new Block(AbstractBlock.Settings.copy(Blocks.COBBLESTONE)));
     public static final Block GROWING_STYROGLYTE = registerBlock("growing_styroglyte", new GrassBlock(AbstractBlock.Settings.copy(Blocks.STONE).mapColor(MapColor.PALE_GREEN)));
     public static final Block ASH = registerBlock("ash", new Block(AbstractBlock.Settings.copy(Blocks.SAND)));
+    public static final Block EMBERED_ASH = registerBlock("embered_ash", new Block(AbstractBlock.Settings.copy(Blocks.SAND)));
+
+    public static final Block CHARRED_PISTACHIO_LOG = registerBlock("charred_pistachio_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
 
     //glass stone
     public static final Block BLACK_GLASS_STONE = registerBlock("black_glass_stone", new StainedGlassBlock(DyeColor.BLACK, AbstractBlock.Settings.create().mapColor(DyeColor.BLACK).instrument(NoteBlockInstrument.HAT).strength(0.3F).sounds(BlockSoundGroup.GLASS).nonOpaque().allowsSpawning(Blocks::never).solidBlock(Blocks::never).suffocates(Blocks::never).blockVision(Blocks::never)));

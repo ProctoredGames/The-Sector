@@ -60,7 +60,8 @@
     ],
     [
       "the_sector:patch_charred_gnarlweed",
-      "the_sector:patch_tall_charred_gnarlweed"
+      "the_sector:patch_tall_charred_gnarlweed",
+      "the_sector:charred_stump"
     ],
     [
       "minecraft:freeze_top_layer"

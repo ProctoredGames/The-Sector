@@ -34,7 +34,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.COBBLED_STYROGLYTE);
                         entries.add(ModBlocks.CHARRED_STYROGLYTE);
                         entries.add(ModBlocks.ASH);
+                        entries.add(ModBlocks.EMBERED_ASH);
                         entries.add(ModBlocks.DENSE_CLOUD);
+                        entries.add(ModBlocks.CHARRED_PISTACHIO_LOG);
 
                         // Glass Stones (color order)
                         entries.add(ModBlocks.WHITE_GLASS_STONE);
